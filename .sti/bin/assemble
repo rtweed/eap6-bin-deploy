@@ -82,7 +82,7 @@ echo ${WAR_FILE_URL}
 
 curl -o ${DEPLOY_DIR}/ROOT.war -O ${WAR_FILE_URL}
 
-echo "RHC Bootcamp Middleware License\n\nThis software is meets the standard set forth by the company and can be used within all deployment environments" > /opt/eap/rhc-ose-license.txt
+echo -e "RHC Bootcamp Middleware License\n\nThis software is meets the standard set forth by the company and can be used within all deployment environments" > /opt/eap/rhc-ose-license.txt
 
 if [ -d $LOCAL_SOURCE_DIR/configuration ]; then
   echo "Copying config files from project..."
